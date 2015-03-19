@@ -1,0 +1,20 @@
+Sistema operacional, Online Transaccional Processing (OLTP), datos de las transacciones llevadas adelante en el sistema
+Data Warehouse (DW), datos históricos
+Decisión de diseño->que nivel de detalle. Ventas por hora, ventas por dia, por semana. Servicio de comidas rápida, ventas por minuto. DB transaccional < DBDW.
+El objetivo de la clase es ver metodología efesto.
+Principales características de los sistemas OLAP.
+Modelo de datos. Com definir un modelo de datos a partir de los datos que tiene la organizacion. Tablas de hechos y tablas de dimensiones. Un ejemplo de tansacción, la venta, la factura no porque es el registro de la venta.
+Arquitectura de un DW. Proceso ETL, extracción transformación y carga, ETL estandariza, formatea o normaliza los datos. Busco por ej la forma de representar la fecha de una única manera. Interfaces y operadores, siempre interfaces gráficas.
+Criterio de copia de seguridad, ya que el warehouse va a ser muy grande, tenemos que buscar los datos relevantes para lo que vamos a hacer.
+Un proy de DW lo fundamental es determinar la función que yo voy a implementar. Puede nacer a partir de la necesidad de un sector (datamark).
+Definir que van a hacer los desarrolladores y los usuarios del DW. Buscar una parte de los informes que va a dar el warehouse, tenerlo funcionando para que lo vean los gerentes. Importante trabajar con prototipos.
+Ciclo de vida para construir un DataWarehouse. Análisis enfocado en dos, discernimiento de fuentes y la otra requisitos del usuario. Luego paso al diseño conseptual. Primero diselo lógico, modelado multidimencional, dos esquemas, estrella y copo de nieve. Modo normalizado llegamos a un esquema esrtrella mientras que no normalizado -> copo de nieve, ventajas y desventajas de c/u. Luego diseño físico, depende del tipo de base de datos, relacional -> ROLAP, multidimensional -> MOLAP. Luego paso al diseño del ETL.
+Ciclo de vida para construir el DW, metodología para armar DW -> HEFESTO.
+Análisis de requerimientos, de los OLTP, modelo lófco del DW e integración de datos.
+Características de la metodología, es fácil pasar de un modelo OLTP a una OLAP, metodología aplicable en cualquier contexto.
+Caso práctico.
+Pasos de diseño del DW, en un warehouse no voy a tener datos del cliente, no esta bien, no es de un warehouse, por ej, su nombre y apellido. De un producto por ej una descripción
+Ejemplo cadena de supermercados. 3 < dimensiones < 15.
+Otras orientaciones de diseño.
+Llegamos hasta el ciclo de vida de warehouse, la diferencia con los que conocemos son las interfaces de los usuarios finales, estas no son consultadas con el usuario, interfaces para c/u de acuerdo a c/requerimiento. El peso acá está en los datos que estoy mostrando no como se los muestro.
+Para la próxima leer metodología efesto y la unidad 4, pasos para armar DW. Vamos a ejercitar asique tenemos que traer las notebooks.
